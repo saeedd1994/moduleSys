@@ -1,6 +1,22 @@
-<h1>
-  hello from module system
-</h1>
-<p>
-  this is a test for module system
-</p>
+<div class="container mt-2">
+  <div class="row">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="./elements" routerLinkActive="active">Elements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="./collections" routerLinkActive="active">Collection</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <div class="card">
+      <div class="card-body">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
