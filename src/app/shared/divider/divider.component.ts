@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-divider',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./divider.component.scss']
 })
 export class DividerComponent implements OnInit {
-
-  constructor() { }
+  @Input() title='';
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
