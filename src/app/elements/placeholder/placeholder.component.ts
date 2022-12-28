@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PlaceholderComponent implements OnInit {
 
   @Input() header: boolean = true;
+  @Input() lines: number = 3
 
   constructor() {
   }

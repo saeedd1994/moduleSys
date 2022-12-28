@@ -1,10 +1,16 @@
-import { Directive } from '@angular/core';
+import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
 
 @Directive({
   selector: '[appTimes]'
 })
 export class TimesDirective {
 
-  constructor() { }
+  constructor(private viewContainer: ViewContainerRef, private templateRef: TemplateRef<any>) {}
 
+  @Input('appTimes') set render(times: number) {
+    this.viewContainer.clear();
+    for (let item = 0; item < times; item++) {
+      this.viewContainer.createEmbeddedView(this.templateRef,{})
+    }
+  }
 }
