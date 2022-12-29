@@ -28,15 +28,15 @@ export class CollectionsHomeComponent implements OnInit {
   headers: any = [
     {
       key: 'name',
-      label: 'name'
+      label: 'Name'
     },
     {
       key: 'age',
-      label: 'age'
+      label: 'Age'
     },
     {
       key: 'job',
-      label: 'job'
+      label: 'Job'
     }
   ]
 
