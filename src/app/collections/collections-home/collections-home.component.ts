@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CollectionsHomeComponent implements OnInit {
 
-  data = [
+  data: any = [
     {
       name: 'saeed',
       age: 28,
@@ -25,7 +25,7 @@ export class CollectionsHomeComponent implements OnInit {
     }
   ];
 
-  headers = [
+  headers: any = [
     {
       key: 'name',
       label: 'name'
