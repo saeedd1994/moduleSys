@@ -5,10 +5,8 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
+  <tr *ngFor="let record of data">
+    <td *ngFor="let header of headers">{{record[header.key]}}</td>
   </tr>
   </tbody>
 </table>
