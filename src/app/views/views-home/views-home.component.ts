@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Stat} from "../../models/stat";
+import {ItemListModel} from "../../models/item-list-model";
 
 @Component({
   selector: 'app-views-home',
@@ -27,7 +28,7 @@ export class ViewsHomeComponent implements OnInit {
     }
   ]
 
-  items:any= [
+  items: ItemListModel[] = [
     {
       title: 'couch',
       imageUrl: 'assets/images/couch.jpg',
