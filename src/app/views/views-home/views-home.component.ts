@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Stat} from "../../models/stat";
 
 @Component({
   selector: 'app-views-home',
@@ -7,7 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewsHomeComponent implements OnInit {
 
-  constructor() { }
+  stats: Stat[] = [
+    {
+      value: 1200,
+      label: 'number of users'
+    },
+    {
+      value: 318,
+      label: 'downloads'
+    },
+    {
+      value: 900,
+      label: 'satisfaction'
+    },
+    {
+      value: 27,
+      label: 'stars'
+    }
+  ]
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
