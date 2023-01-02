@@ -27,6 +27,19 @@ export class ViewsHomeComponent implements OnInit {
     }
   ]
 
+  items:any= [
+    {
+      title: 'couch',
+      imageUrl: 'assets/images/couch.jpg',
+      description: 'this is a really comfortable couch for lying'
+    },
+    {
+      title: 'dresser',
+      imageUrl: 'assets/images/dresser.jpeg',
+      description: 'the best dresser in the world and more capacity'
+    }
+  ]
+
   constructor() {
   }
 
