@@ -1,28 +1,4 @@
 <app-divider [title]="'Table Component'"></app-divider>
 <app-table [className]="'table-bordered'" [headers]="headers" [data]="data" [ngClass]="'table-bordered'"></app-table>
-
-<div class="d-flex align-items-start">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link"
-            routerLink="./"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact : true}">
-      Biography
-    </button>
-    <button class="nav-link"
-            routerLink="./companies"
-            routerLinkActive="active">
-      Profile
-    </button>
-    <button class="nav-link"
-            routerLink="./partners"
-            routerLinkActive="active">
-      Messages
-    </button>
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+<app-divider [title]="'Tab Component'"></app-divider>
+<app-tabs></app-tabs>
