@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-mods',
@@ -7,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeModsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  accordion: any = [
+    {
+      title: 'why the sky is blue?',
+      content: 'because the color from the big-bang is it.'
+    },
+    {
+      title: 'why some oranges are sweet ? ',
+      content: 'it really depends on the water when it grown.'
+    },
+    {
+      title: 'why baby crying all the day?',
+      content: 'because always needs taking care and need milk.'
+    }
+  ]
 
   ngOnInit(): void {
   }
