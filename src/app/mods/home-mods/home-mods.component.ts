@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Accordion} from "../../models/accordion";
 
 @Component({
   selector: 'app-home-mods',
@@ -10,7 +11,7 @@ export class HomeModsComponent implements OnInit {
   constructor() {
   }
 
-  accordion: any = [
+  accordion: Accordion[] = [
     {
       title: 'why the sky is blue?',
       content: 'because the color from the big-bang is it.'
