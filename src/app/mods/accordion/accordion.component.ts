@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Accordion} from "../../models/accordion";
+import {first} from "rxjs";
 
 @Component({
   selector: 'app-accordion',
@@ -8,6 +9,7 @@ import {Accordion} from "../../models/accordion";
 })
 export class AccordionComponent implements OnInit {
   @Input() accordion: Accordion[] = [];
+  firstIndex: number = 0;
 
   constructor() {
   }
@@ -15,4 +17,14 @@ export class AccordionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(index: number) {
+    if(index === this.firstIndex)
+    {
+      this.firstIndex = -1
+    }else
+    {
+      this.firstIndex = index
+    }
+
+  }
 }
